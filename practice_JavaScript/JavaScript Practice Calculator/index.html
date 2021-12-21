@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>JavaScript Practice Calculator</title>
+</head>
+<body>
+    <div class="calculator_bg">
+        <div class="calculator_table">
+            <table border='1'>
+                <tr>
+                    <td colspan='3'>
+                        <div class="calculator_box"></div>
+                    </td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td class='num7' onclick={insertNumber(7)}>7</td>
+                    <td class='num8' onclick={insertNumber(8)}>8</td>
+                    <td class='num9' onclick={insertNumber(9)}>9</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class='num4' onclick={insertNumber(4)}>4</td>
+                    <td class='num5' onclick={insertNumber(5)}>5</td>
+                    <td class='num6' onclick={insertNumber(6)}>6</td>
+                    <td>×</td>
+                </tr>
+                <tr>
+                    <td class='num3' onclick={insertNumber(3)}>3</td>
+                    <td class='num2' onclick={insertNumber(2)}>2</td>
+                    <td class='num1' onclick={insertNumber(1)}>1</td>
+                    <td>÷</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
