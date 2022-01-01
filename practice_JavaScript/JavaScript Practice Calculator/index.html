@@ -10,30 +10,30 @@
 <body>
     <div class="calculator_bg">
         <div class="calculator_table">
-            <table border='1'>
+            <table>
                 <tr>
                     <td colspan='3'>
-                        <div class="calculator_box"></div>
+                        <div class="calculator_box">0</div>
                     </td>
-                    <td>+</td>
+                    <td class='sign sign1' onclick={insertsign()}>+</td>
                 </tr>
                 <tr>
-                    <td class='num7' onclick={insertNumber(7)}>7</td>
-                    <td class='num8' onclick={insertNumber(8)}>8</td>
-                    <td class='num9' onclick={insertNumber(9)}>9</td>
-                    <td>-</td>
+                    <td class='num num7' onclick={insertNumber(7)}>7</td>
+                    <td class='num num8' onclick={insertNumber(8)}>8</td>
+                    <td class='num num9' onclick={insertNumber(9)}>9</td>
+                    <td class='sign sign2' onclick={insertsign()}>-</td>
                 </tr>
                 <tr>
-                    <td class='num4' onclick={insertNumber(4)}>4</td>
-                    <td class='num5' onclick={insertNumber(5)}>5</td>
-                    <td class='num6' onclick={insertNumber(6)}>6</td>
-                    <td>×</td>
+                    <td class='num num4' onclick={insertNumber(4)}>4</td>
+                    <td class='num num5' onclick={insertNumber(5)}>5</td>
+                    <td class='num num6' onclick={insertNumber(6)}>6</td>
+                    <td class='sign sign3' onclick={insertsign()}>×</td>
                 </tr>
                 <tr>
-                    <td class='num3' onclick={insertNumber(3)}>3</td>
-                    <td class='num2' onclick={insertNumber(2)}>2</td>
-                    <td class='num1' onclick={insertNumber(1)}>1</td>
-                    <td>÷</td>
+                    <td class='num num3' onclick={insertNumber(3)}>3</td>
+                    <td class='num num2' onclick={insertNumber(2)}>2</td>
+                    <td class='num num1' onclick={insertNumber(1)}>1</td>
+                    <td class='sign sign4' onclick={insertsign()}>÷</td>
                 </tr>
             </table>
         </div>
