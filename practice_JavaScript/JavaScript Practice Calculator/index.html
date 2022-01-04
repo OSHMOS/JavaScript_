@@ -8,36 +8,37 @@
     <title>JavaScript Practice Calculator</title>
 </head>
 <body>
-    <div class="calculator_bg">
-        <div class="calculator_table">
-            <table>
-                <tr>
-                    <td colspan='3'>
-                        <div class="calculator_box">0</div>
-                    </td>
-                    <td class='sign sign1' onclick={insertsign()}>+</td>
-                </tr>
-                <tr>
-                    <td class='num num7' onclick={insertNumber(7)}>7</td>
-                    <td class='num num8' onclick={insertNumber(8)}>8</td>
-                    <td class='num num9' onclick={insertNumber(9)}>9</td>
-                    <td class='sign sign2' onclick={insertsign()}>-</td>
-                </tr>
-                <tr>
-                    <td class='num num4' onclick={insertNumber(4)}>4</td>
-                    <td class='num num5' onclick={insertNumber(5)}>5</td>
-                    <td class='num num6' onclick={insertNumber(6)}>6</td>
-                    <td class='sign sign3' onclick={insertsign()}>×</td>
-                </tr>
-                <tr>
-                    <td class='num num3' onclick={insertNumber(3)}>3</td>
-                    <td class='num num2' onclick={insertNumber(2)}>2</td>
-                    <td class='num num1' onclick={insertNumber(1)}>1</td>
-                    <td class='sign sign4' onclick={insertsign()}>÷</td>
-                </tr>
-            </table>
+    <header>
+        <div class="header">
+            OSHMOS's Calculator
         </div>
-    </div>
+    </header>
+    <main>
+        <div class="calculator_main">
+            <div class="calculator calculator_valuebox">
+                <div class="calculator_value">
+                    <input type="text" style="width:200px; height:30px;">
+                </div>
+            </div>
+            <div class="calculator calculator_signbox">
+                <div class="calculator_sign calculator_sign1">
+                    <img src="./Img/001.png" alt="더하기 부호"></button>
+                </div>
+                <div class="calculator_sign calculator_sign2">
+                    <img src="./Img/002.png" alt="빼기 부호"></button>
+                </div>
+                <div class="calculator_sign calculator_sign3">
+                    <img src="./Img/003.png" alt="나누기 부호"></button>
+                </div>
+                <div class="calculator_sign calculator_sign4">
+                    <img src="./Img/004.png" alt="곱하기 부호"></button>
+                </div>
+                <div class="calculator_sign calculator_sign5">
+                    <img src="./Img/005.png" alt="등호 부호"></button>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
