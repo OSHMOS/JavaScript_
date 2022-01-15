@@ -2,12 +2,18 @@
   width: 100vw;
   height: 50px;
   background: #58ccff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .calculator_main {
+  width: 100vw;
   height: 180px;
   border: 1px solid black;
 }
+
+/* 잘려 있는 것처럼 보여서 조정 중 */
 
 .calculator {
   width: 300px;
