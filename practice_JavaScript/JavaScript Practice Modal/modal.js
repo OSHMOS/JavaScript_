@@ -2,10 +2,10 @@ const button = document.querySelector("#modalOpenButton");
 
 const modal = document.querySelector("#modal");
 
-const cls_btn = document.querySelector("#modal_cls_btn");
+const cls_btn = document.querySelector(".close-area");
 
 button.onclick = function(){
-    modal.style.display = "block";
+    modal.style.display = "flex";
 }
 
 cls_btn.onclick = function(){

@@ -10,21 +10,21 @@
 <body>
     <button id="modalOpenButton">Open!</button>
 
-    <div id="modal">
-        <div id="modal_window">
-            <div class="modal_title">
+    <div id="modal" class="modal-overlay">
+        <div class="modal-window">
+            <div class="title">
                 <h1>특가 상담 신청</h1>
             </div>
-            <div class="modal_content">
-                <div class="modal_form">
+            <div class="close-area">X</div>
+            <div class="content">
+                <div class="form">
                     <form action="">
-                        
+                        <label for="name">이름 : </label>
+                        <input id="name"type="text">
                     </form>
                 </div>
     
             </div>
-
-            <button id="modal_cls_btn">X</button>
         </div>
             
         <div class="modal_layer"></div>
