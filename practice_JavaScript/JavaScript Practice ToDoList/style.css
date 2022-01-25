@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 350px;
+  margin: 40px;
+  padding: 30px 0;
+  background-color: #fcfcfc;
+  box-shadow: -5px -5px 20px #dfdfdf, 5px 5px 20px #babecc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.title {
+  margin: 15px auto;
+  font-size: 30px;
+  font-weight: 600;
+  color: #9600ff;
+}
+
+#to-do-list {
+  width: 280px;
+  margin: 0 auto 15px;
+  padding: 0;
+  list-style: none;
+}
+
+#to-do-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 40px;
+  margin: 8px auto 15px;
+  border-bottom: 1px solid #9600ff;
+  cursor: pointer;
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
