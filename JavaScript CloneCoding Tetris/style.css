@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: 0;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.score {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 2rem;
+}
+.playground > ul {
+  width: 25px;
+  margin: 0 auto;
+  border: 1px solid #333;
+}
+
+.playground > ul > li {
+  width: 100%;
+  height: 25px;
+}
+
+.playground > ul > li > ul {
+  display: flex;
+}
+
+.playgorund > ul > li > ul > li {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid #ccc;
+}
+
+.tree {
+  background: #67c23a;
+}
