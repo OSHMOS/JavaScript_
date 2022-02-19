@@ -1,16 +1,31 @@
-let time = 600;
-let min = " ";
-let sec = " ";
+var countDownDate = new Date();
+countDownDate.setHours(24,0,0,0);
 
-let x = setInterval(function() {
-    min = parseInt(time/60);
-    sec = time % 60;
+var countdown = document.getElementById("tiles");
+var x = setInterval(function() {
 
-    document.querySelector("#timer").innerHTML = min + "분" + sec + "초";
-    time--;
 
-    if (time < 0) {
-        clearInterval(x);
-        document.querySelector("#timer").innerHTML = "시간 초과";
-    }
+var now = new Date().getTime();
+
+var gap = countDownDate - now;
+
+
+var hours = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+var minutes = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
+
+var seconds = Math.floor((gap % (1000 * 60)) / 1000);
+
+
+  countdown.innerHTML = "<span>" + hours + "</span>" + "<p>" + ":" + "</p><span>" + minutes + "</span>" + "<p>" + ":" + "</p><span>" + seconds + "</span>"; 
+
+
+if (gap < 0) {
+
+   clearInterval(x);
+
+    document.getElementById("demo").innerHTML = "EXPIRED";
+
+  }
+
 }, 1000);
