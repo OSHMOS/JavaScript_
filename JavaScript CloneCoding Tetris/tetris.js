@@ -27,7 +27,7 @@ init()
 
 // functions
 function init(){
-    tempMovingItem = {...movingItem};
+    tempMovingItem = { ...movingItem };
     for (let i = 0; i < GAME_ROWS; i++) {
         prependNewLine()
     }
@@ -51,7 +51,7 @@ function renderBlocks(moveType = "") {
     movingBlocks.forEach(moving => {
         moving.classList.remove(type, "moving");
     })
-    BLOCKS[type][direction].some(block=>{
+    BLOCKS[type][direction].some(block => {
         const x = block[0] + left;
         const y = block[1] + top;
         const target = playground.childNodes[y] ? playground.ChildNodes[y].childNodes[0].childNodes[x] : null;
